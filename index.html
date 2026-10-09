@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chisha Sikalumbi | Interactive Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header>
+        <h1>Chisha Sikalumbi</h1>
+        <p>BSc Computer Engineering | Mulungushi University</p>
+        <button id="theme-toggle">Switch Theme</button>
+        <button id="menu-toggle" aria-label="Toggle Navigation">☰ Menu</button>
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a href="#skills">Skills & Projects</a></li>
+                <li><a href="#learning">Learning Plan</a></li>
+                <li><a href="#photos">Photos</a></li>
+                <li><a href="#media">Media</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Intro Hero Section -->
+        <section id="hero" class="hero-section">
+            <h2>Welcome to My Portfolio</h2>
+            <p>I am a Computer Engineering student passionate about web development, computer vision, and software engineering.</p>
+            <a href="#skills" class="btn">View My Projects</a>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                My name is Chisha Sikalumbi, an enthusiastic Computer Engineering student at Mulungushi University. 
+                I have a strong interest in software development, algorithm design, and modern web technologies. 
+                Through my academic journey, I continuously explore programming concepts in Java, JavaScript, and MATLAB 
+                to build innovative, efficient, and responsive applications that solve real-world problems.
+            </p>
+        </section>
+
+        <!-- Hobbies Section -->
+        <section id="hobbies">
+            <h2>My Hobbies</h2>
+            <ul>
+                <li><strong>Software & Web Development:</strong> Experimenting with new frontend frameworks and backend logic.</li>
+                <li><strong>Computer Vision Research:</strong> Exploring algorithms like OpenCV and YOLO for object detection.</li>
+                <li><strong>Digital Sketching & Arts:</strong> Creating artistic pencil portraits and graphic design elements.</li>
+            </ul>
+        </section>
+
+        <!-- Skills & Projects Section -->
+        <section id="skills">
+            <h2>Skills & Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>Vehicle Detection Algorithm Analysis</h3>
+                    <p>Evaluated OpenCV, YOLO, and SSD model performance for computer vision tasks.</p>
+                    <button class="toggle-btn" onclick="toggleDetails('proj1')">Show Details</button>
+                    <p id="proj1" class="details hidden">Implemented in Python using OpenCV for object tracking and traffic monitoring.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Interactive Web Applications</h3>
+                    <p>Designed dynamic client-side applications using modern HTML5, CSS3, and JavaScript.</p>
+                    <button class="toggle-btn" onclick="toggleDetails('proj2')">Show Details</button>
+                    <p id="proj2" class="details hidden">Features DOM manipulation, responsive layouts, and local validation features.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Digital Logic Circuit Modeling</h3>
+                    <p>Constructed gate-level arithmetic logic units and adders/subtractors in MATLAB Simulink.</p>
+                    <button class="toggle-btn" onclick="toggleDetails('proj3')">Show Details</button>
+                    <p id="proj3" class="details hidden">Simulated 6-bit digital arithmetic circuits using foundational logic gates.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Learning Plan Section -->
+        <section id="learning">
+            <h2>My Learning Plan</h2>
+            <ol>
+                <li>Master core HTML5, CSS3, and modern JavaScript ES6+ techniques.</li>
+                <li>Deepen understanding of JavaFX, MVC patterns, and Gradle build tools.</li>
+                <li>Apply computer vision models into real-world web and mobile applications.</li>
+            </ol>
+
+            <h3>Learning Roadmap</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Topic</th>
+                        <th>Target Month</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Web Technologies (ICT251)</td>
+                        <td>October 2026</td>
+                        <td>In Progress</td>
+                    </tr>
+                    <tr>
+                        <td>Advanced Java Programming (ICT281)</td>
+                        <td>November 2026</td>
+                        <td>Planned</td>
+                    </tr>
+                    <tr>
+                        <td>Machine Learning Frameworks</td>
+                        <td>December 2026</td>
+                        <td>Planned</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Photos Section -->
+        <section id="photos">
+            <h2>My Photos</h2>
+            <div class="gallery">
+                <figure>
+                    <img src="images/photo1.jpg" width="250"alt="University campus environment study space">
+                    <figcaption>Focusing on computer engineering coursework on campus.</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/photo2.jpg" width="250"alt="Programming workspace setup with dual monitors">
+                    <figcaption>My development setup for web design and coding projects.</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/photo3.jpg" width="250"alt="Engineering circuit logic experimentation">
+                    <figcaption>Working on digital design logic models and simulations.</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- Media Section -->
+        <section id="media">
+            <h2>My Media</h2>
+            <div class="media-container">
+                <h3>Video Demonstration</h3>
+                <video controls width="100%">
+                    <source src="videos/intro.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p>Summary: A video showcase illustrating software features and dynamic project workflow.</p>
+
+                <h3>Audio Recording</h3>
+                <audio controls>
+                    <source src="videos/voice.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <p>Summary: Audio discussion summarizing web development fundamentals and project milestones.</p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p><em>Browser demonstration only — no message is sent.</em></p>
+            
+            <form id="contact-form" novalidate>
+                <div class="form-group">
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" required>
+                    <span class="error" id="name-error"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+                    <span class="error" id="email-error"></span>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    <span class="error" id="message-error"></span>
+                    <button type="submit">Submit Message</button>
+            </form>
+            <div id="form-preview" class="preview-box hidden"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Chisha Sikalumbi. All rights reserved.</p>
+        <p><a href="https://github.com/chishasikalumbi" target="_blank" id="repo-link">Visit My GitHub Profile</a></p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html> 
